@@ -1,7 +1,6 @@
-from fastapi import FastAPI
-from app.upload import router as upload_router
-from app.job import router as job_router
-from app.matcher import router as matcher_router
+from .upload import router as upload_router
+from .job import router as job_router
+from .matcher import router as match_router
 
 app = FastAPI(title="Resume AI Platform")
 
